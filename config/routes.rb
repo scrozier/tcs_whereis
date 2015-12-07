@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
-  post 'incoming_sms' => 'sms#incoming'
+  root 'main#index'
+  post 'sms_incoming' => 'sms#incoming'
 end
