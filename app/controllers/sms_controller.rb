@@ -1,4 +1,4 @@
-class ResponderController < ApplicationController
+class SmsController < ApplicationController
 
   def incoming
     render text: "TCS Responder, at your service!"
