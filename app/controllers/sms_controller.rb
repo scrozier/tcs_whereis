@@ -1,8 +1,9 @@
 class SmsController < ApplicationController
 
+  skip_before_action :verify_authenticity_token
+
   def incoming
     render text: "TCS Responder, at your service!"
-    logger.error "params: #{params.inspect}"
   end
 
   def respond
