@@ -1,2 +1,9 @@
-%h1 TCS SMS Responder
-%p Running.
+%h1 TCS where_is simulator
+- if @response
+  %h2 Previous query
+  %p= @response.first
+  %h2 Response
+  %p= @response.last
+= form_tag root_path do
+  = text_field_tag :query
+  = submit_tag 'Submit'
