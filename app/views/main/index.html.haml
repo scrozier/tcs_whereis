@@ -2,8 +2,9 @@
 - if @response
   %h2 Previous query
   %p= @response.first
-  %h2 Response
+  %h3 Response
   %p= @response.last
+  %h2 New query
 = form_tag root_path do
   = text_field_tag :query
   = submit_tag 'Submit'
