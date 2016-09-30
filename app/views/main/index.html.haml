@@ -6,7 +6,10 @@
         %h2 Previous query
         %p= @response.first
         %h3 Response
-        %p= @response.last
+        - if @response.last.size > 1
+          %p I couldn't narrow your request down to just one conference room.
+        - @response.last.each do |resp|
+          %p= resp
         %h2 New query
       = form_tag root_path do
         .form-group
