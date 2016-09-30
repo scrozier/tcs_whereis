@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'twilio-ruby'
+gem 'amatch'
 
 group :production do
   gem 'rails_12factor'
